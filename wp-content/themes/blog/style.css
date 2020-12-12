@@ -36,12 +36,11 @@ body {
 }
 
 .featured-article {
-	background-color: #ccc;
+	background-color: #fff;
 }
 
 .featured-article img, .article img {
 	max-width: 100%;
-	height: 200px;
 	padding-bottom: 20px;
 }
 
