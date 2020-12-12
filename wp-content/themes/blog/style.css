@@ -1,0 +1,104 @@
+/*
+Theme Name: Blog
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: the Simona Schiop
+Author URI: www.google.com
+Description: Template pentru curs
+Version: 0.1
+Requires at least: 5.0
+Tested up to: 5.6
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+
+}
+
+.container {
+	width: 1150px;
+	margin: 0 auto;
+}
+
+.article {
+	display: flex;
+	flex-flow: column wrap;
+	flex-direction: row;
+	padding: 30px;
+}
+
+.normal-article {
+	width: 46%;
+	padding: 20px;
+}
+
+.featured-article {
+	background-color: #ccc;
+}
+
+.featured-article img, .article img {
+	max-width: 100%;
+	height: 200px;
+	padding-bottom: 20px;
+}
+
+.header {
+	display: flex;
+	width: 1150px;
+	margin: 30px auto;
+}
+
+.logo {
+	width: 30%;
+}
+
+.logo img {
+	max-height: 30px;
+}
+
+.menu {
+	display: flex;
+	width: 65%;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.menu li {
+	list-style: none;
+	padding-left: 30px;
+}
+
+.footer {
+	width: 1150px;
+	margin: 30px auto;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #f1f1f1;
+}
+
+.legal {
+	display: flex;
+	width: 40%;
+	align-items: center;
+}
+
+.legal a {
+	padding: 0  0 0 10px;
+	color: #000;
+	text-decoration: none;
+}
+.social-links {
+	text-align: right;
+	width: 40%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.social-links img {
+	max-width: 16px;
+	padding: 0 0 0 10px;
+}
