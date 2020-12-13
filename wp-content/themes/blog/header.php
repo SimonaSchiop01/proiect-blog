@@ -10,12 +10,17 @@
 
 <header class="header">
 	<section class="logo">
-		<a href="#"><img src="/proiect1/img/logo.png"></a>
+		<a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/logo.png"></a>
 	</section>
 	<section class="menu">
-		<li>LIFESTYLE</li>
-		<li>PHOTODIARY</li>
-		<li>MUSIC</li>
-		<li>TRAVEL</li>
+		<?php if(has_nav_menu( 'primary' )):?>
+                <nav class="header-nav">
+                    <?php wp_nav_menu(
+                        array(
+                            'theme_location' => 'primary',
+                        )
+                    ); ?>
+                </nav>
+        <?php endif; ?>
 	</section>
 </header>
